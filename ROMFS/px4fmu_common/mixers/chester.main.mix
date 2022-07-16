@@ -1,0 +1,38 @@
+This mixer has control group as follows
+Control group 0
+0 roll
+1 pitch
+2 yaw
+3 thrust
+
+Output group 0
+1 left elevon
+2 right elevon
+3 left motor
+4 right motor
+————————————
+————————————
+Left elevon mixer
+
+M: 2
+S: 0 0 -10000 -10000 0 -10000 10000
+S: 0 1 10000 10000 0 -10000 10000
+————————————
+Right elevon mixer
+
+M: 2
+S: 0 0 -10000 -10000 0 -10000 10000
+S: 0 1 -10000 -10000 0 -10000 10000
+————————————
+Left Throttle Mixer
+
+M: 2
+S: 0 3 00000 20000 0 -10000 10000
+S: 0 2 -10000 -10000 0 -10000 10000
+
+————————————
+Right Throttle Mixer
+
+M: 2
+S: 0 3 00000 20000 0 -10000 10000
+S: 0 1 -10000 -10000 0 -10000 10000
